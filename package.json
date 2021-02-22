@@ -1,0 +1,51 @@
+{
+  "name": "slack-bot",
+  "version": "1.0.0",
+  "description": "water cooler conversations",
+  "main": "src/start.js",
+  "author": "udori",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": " nodemon src/start.js",
+    "start:prod": "node src/start.js",
+    "test": "mocha tests/**/*.js"
+  },
+  "dependencies": {
+    "@slack/events-api": "^2.3.4",
+    "@slack/web-api": "^5.11.0",
+    "@supercharge/promise-pool": "^1.3.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "botbuilder": "^4.9.3",
+    "botbuilder-adapter-slack": "^1.0.11",
+    "botbuilder-core": "^4.9.3",
+    "botkit": "^4.9.0",
+    "chai": "^4.2.0",
+    "connect-redis": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "generate-password": "^1.5.1",
+    "googleapis": "^60.0.1",
+    "immutable": "^4.0.0-rc.12",
+    "ioredis": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.2.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.29",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.11",
+    "open": "^7.2.1",
+    "pug": "^3.0.0",
+    "redis": "^3.0.2",
+    "telnyx": "^1.10.1",
+    "url": "^0.11.0",
+    "uuidv4": "^6.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
